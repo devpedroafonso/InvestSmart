@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c303645144.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Juros Compostos</title>
+</head>
+
+<body>
+    <header>
+        <section class="title">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h1>InvestiSmart</h1>
+        </section>
+    </header>
+
+
+
+    <main>
+        <section class="frame">
+            <section class="frame_title">
+                <h2>Calcule o Retorno do Investimento</h2>
+            </section>
+            <section class="frame_form">
+                <form onsubmit="event.preventDefault(); calculateAmount();">
+                    <section class="campo">
+                        <label for="name">Nome do Investimento</label>
+                        <input type="text" name="name" id="name" placeholder="Nome do investidor" required>
+                    </section>
+
+                    <section class="campo">
+                        <label for="starting_capital">Capital Inicial</label>
+                        <input type="number" name="Capital_Inicial" id="startingCapital" value="" step="1" min="1"
+                            placeholder="Capital Inicial" required>
+                    </section>
+
+                    <section class="campo">
+                        <label for="heigth">Taxa de Juros (%) Mensal</label>
+                        <input type="number" nome="taxa_de_juros" id="interestRate"
+                            placeholder="Taxa de Juros (%) Mensal" required>
+                    </section>
+
+                    <section class="campo">
+                        <label for="numer_months">Número de Meses</label>
+                        <input type="number" nome="number_months" id="numberMonths"
+                            placeholder="Número de Messes do Investimento" min="1" max="50" step="1" required>
+                    </section>
+
+
+                    <button type="submit">Calcular o Montante</button>
+
+                </form>
+
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="dev">
+            <p>DESENVOLVIDO POR</p>
+            <section class="dev_git">
+                <a href="https://github.com/devpedroafonso"><i class="fa-brands fa-github"></i>
+                    <p>devpedroafonso</p>
+                </a>
+            </section>
+        </section>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

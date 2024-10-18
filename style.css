@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --roxo-profundo:#4B0082;/*Cor principal*/
+    --cinza-claro:#F5F5F5;/*Para fundos e seções*/
+    --verde-esmeralda:#2E8B57;/*Para destacar elementos*/
+    --dourado-claro:#fdc409;/*Para detalhes e botões de ação*/
+    --lavanda-clara:#E6E6FA;/*Para texto de fundo*/
+    --lilas: #efd8ff;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dourado-claro);
+    background-color: var(--roxo-profundo);
+    border-bottom: 0.3rem solid #fdc409;
+    height: 10vh;
+    font-size: 30px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: var(--cinza-claro);
+    margin: auto;
+    background-color: var(--lilas);
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 70%;
+    width: 40%;
+    border: 3px solid var(--dourado-claro);
+    box-shadow: -2px 2px 2px black;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--cinza-claro);
+}
+
+.frame_title{
+    font-size: 22px;
+}
+
+.frame_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 1rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo label{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.campo input{
+    margin-bottom: 0.4rem;
+    background-color: transparent;
+    border: 0.1rem solid var(--dourado-claro);
+    padding-inline: 5px;
+    width: 100%;
+    height: 2rem;
+}
+
+.frame_button{
+    display: flex;
+    width: 17rem;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    margin-top: 2rem;
+    width: 15rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roxo-profundo);
+    color: var(--dourado-claro);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    border:3px solid var(--dourado-claro);
+}
+
+.frame_button button:hover{
+    background-color: var(--dourado-claro);
+    color: var(--roxo-profundo);
+    border: 3px solid var(--roxo-profundo);
+}
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--roxo-profundo);
+    color: var(--dourado-claro);
+    height: 10vh;
+    font-size: 20px;
+
+}
+
+.dev_git a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--dourado-claro);
+}
+
+.dev_git a i{
+    color: white;
+}
