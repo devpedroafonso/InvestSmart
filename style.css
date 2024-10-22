@@ -54,7 +54,7 @@ main{
     display: flex;
     flex-direction: column;
     height: 80vh;
-    background-color: var(--cinza-claro);
+    background:linear-gradient(120deg, var(--roxo-profundo), var(--dourado-claro));
     margin: auto;
     background-color: var(--lilas);
 }
