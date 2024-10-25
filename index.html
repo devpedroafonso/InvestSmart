@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c303645144.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c303645144.js" crossorigin="anonymous"></script> <!--link pessoal do kit de imagens do site fontawesome-->
     <link rel="stylesheet" href="style.css">
     <title>Juros Compostos</title>
 </head>
 
 <body>
-    <header>
+    <header> <!--cabeçalho do site-->
         <section class="title">
             <i class="fa-solid fa-hand-holding-dollar"></i>
             <h1>InvestiSmart</h1>
@@ -19,31 +18,35 @@
 
 
 
-    <main>
-        <section class="frame">
-            <section class="frame_title">
+    <main> <!--Utilizei para fazer o bckground do fundo principal do site-->
+        <section class="frame"> <!--Utilizado para gerar o quadro com os campos das informações-->
+            <section class="frame_title">  <!--Utilizado para posicionar o titulo do quadro-->
                 <h2>Calcule o Retorno do Investimento</h2>
             </section>
-            <section class="frame_form">
-                <form onsubmit="event.preventDefault(); calculateAmount();">
-                    <section class="campo">
+            <section class="frame_form"> <!--Utilizado para manusear o campo de informações-->
+                <form onsubmit="event.preventDefault(); calculateAmount();"> <!--Utilizado para agrupar os campos ("onsubmit foi usado para puxar a função feita no javascript")-->
+                    <section class="campo"> <!--utilizado para agrupar um pampo de informação-->
                         <label for="name">Nome do Investimento</label>
-                        <input type="text" name="name" id="name" placeholder="Nome do investidor" required>
+                        <input type="text" name="name" id="name" placeholder="Nome do investidor" required> <!--type é usado para descrever o tipo de informação
+                                      name é usado para puxar a informação para o banco de dados
+                                      id é usado para puxar a informação para o javascript
+                                      placeholder é usado para ter um texto de exemplo dentro da caixa do input
+                                      required é usado para obrigar a preencher a caixa do input-->
                     </section>
 
-                    <section class="campo">
+                    <section class="campo"> <!--utilizado para agrupar um pampo de informação-->
                         <label for="startingCapital">Capital Inicial</label>
                         <input type="number" name="startingCapital" id="startingCapital" step="1" min="1"
                             placeholder="Capital Inicial" required>
                     </section>
 
-                    <section class="campo">
+                    <section class="campo"> <!--utilizado para agrupar um pampo de informação-->
                         <label for="heigth">Taxa de Juros (%) Mensal</label>
                         <input type="number" nome="interestRate" id="interestRate"
                             placeholder="Taxa de Juros (%) Mensal" step="0.01" required>
                     </section>
 
-                    <section class="campo">
+                    <section class="campo"> <!--utilizado para agrupar um pampo de informação-->
                         <label for="numerMonths">Número de Meses</label>
                         <input type="number" nome="numberMonths" id="numberMonths"
                             placeholder="Número de Messes do Investimento" min="1" max="50" step="1" required>
@@ -61,10 +64,10 @@
 
 
     <footer>
-        <section class="dev">
+        <section class="dev"> <!--Informações do rodapé do site-->
             <p>DESENVOLVIDO POR</p>
             <section class="dev_git">
-                <a href="https://github.com/devpedroafonso"><i class="fa-brands fa-github"></i>
+                <a href="https://github.com/devpedroafonso"><i class="fa-brands fa-github"></i> <!-- "i" esta puxando um "link" da imagem do site fontawelsome-->
                     <p>devpedroafonso</p>
                 </a>
             </section>
@@ -72,7 +75,7 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--linkando o arquivo que contem o javascrip do projeto-->
 </body>
 
 </html>
